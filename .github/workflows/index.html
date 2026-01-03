@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anand Vihar Colony | Gali No. 2</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #e67e22;
+            --gold: #d4af37;
+            --bg-light: #f9f9f9;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; color: #333; background: #fff; scroll-behavior: smooth; }
+        
+        /* Navigation */
+        nav { background: var(--primary); padding: 15px; position: sticky; top: 0; z-index: 1000; text-align: center; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 0.9rem; transition: 0.3s; }
+        nav a:hover { color: var(--accent); }
+
+        /* Hero Section */
+        header { 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('colony background 2.jpeg');
+            background-size: cover; background-position: center; height: 60vh; color: white; 
+            display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+        }
+
+        .section-title { text-align: center; margin: 50px 0 30px; position: relative; }
+        .section-title::after { content: ''; width: 60px; height: 3px; background: var(--accent); position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); }
+
+        .container { max-width: 1200px; margin: auto; padding: 0 20px; }
+
+        /* Grid Layouts */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        
+        .card { border-radius: 12px; overflow: hidden; background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s; position: relative; }
+        .card:hover { transform: translateY(-5px); }
+        .card img { width: 100%; height: 220px; object-fit: cover; }
+        .card-content { padding: 15px; text-align: center; }
+        .highlight-label { position: absolute; top: 10px; left: 10px; background: var(--accent); color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: bold; }
+
+        /* People Section */
+        .people-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 15px; }
+        .person-card { background: var(--bg-light); border: 1px solid #eee; padding: 20px; border-radius: 10px; text-align: center; }
+        .person-card h4 { margin: 5px 0 5px; color: var(--primary); }
+        .person-card p { font-size: 0.8rem; color: #666; font-style: italic; }
+
+        /* Footer & Address */
+        .address-box { background: var(--primary); color: white; padding: 50px 20px; margin-top: 50px; text-align: center; }
+        footer { background: #1a252f; color: #bdc3c7; text-align: center; padding: 20px; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ANAND VIHAR COLONY</h1>
+    <h3>Gali Number 2 Community Portal</h3>
+    <p>Unity | Prosperity | Tradition</p>
+</header>
+
+<nav>
+    <a href="#landscape">Landscape</a>
+    <a href="#festivals">Festivals</a>
+    <a href="#events">Grand Events</a>
+    <a href="#people">Residents</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+    
+    <h2 id="landscape" class="section-title">Colony Landscape</h2>
+    <div class="grid">
+        <div class="card">
+            <span class="highlight-label">Community Hub</span>
+            <img src="mandir img.jpeg" alt="Mandir">
+            <div class="card-content"><h3>The Mandir</h3><p>The spiritual heart of Gali No. 2</p></div>
+        </div>
+        <div class="card">
+            <span class="highlight-label">Morning View</span>
+            <img src="morning 2.jpeg" alt="Day Look">
+            <div class="card-content"><h3>Day Look</h3><p>Clean and peaceful streets in daylight</p></div>
+        </div>
+        <div class="card">
+            <span class="highlight-label">Night View</span>
+            <img src="nightview.jpeg" alt="Night Look">
+            <div class="card-content"><h3>Night Look</h3><p>Safe and bright LED street lighting</p></div>
+        </div>
+        <div class="card">
+            <span class="highlight-label">Recreation</span>
+            <img src="playground.jpeg" alt="Playground">
+            <div class="card-content"><h3>Playground</h3><p>Our dedicated space for sports and yoga</p></div>
+        </div>
+    </div>
+
+    <h2 id="festivals" class="section-title">Cultural Heritage</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="diwali.jpeg" alt="Diwali">
+            <div class="card-content"><h3>Diwali</h3><p>Festival of lights in Anand Vihar</p></div>
+        </div>
+        <div class="card">
+            <img src="holi.jpeg" alt="Holi">
+            <div class="card-content"><h3>Holi</h3><p>Celebrating brotherhood with colors</p></div>
+        </div>                                         
+        <div class="card">
+            <img src="makar sakranti.jpeg" alt="Makar Sakranti">
+            <div class="card-content"><h3>Makar Sakranti</h3><p>Kite flying from every rooftop</p></div>
+        </div>
+        <div class="card">
+            <img src="sarswati puja img.jpeg" alt="Sarswati Puja">
+            <div class="card-content"><h3>Sarswati Puja</h3><p>An annual student-led celebration</p></div>
+        </div>
+        <div class="card">
+            <img src="chath5.jpeg" alt="Chath Puja">
+            <div class="card-content"><h3>chath Puja</h3><p>An annual student-led celebration</p></div>
+        </div>
+    </div>
+
+    <h2 id="events" class="section-title">Grand Events</h2>
+    <div class="grid">
+        <div class="card" style="border-top: 5px solid var(--gold);">
+            <img src="mohit janeu.jpeg" alt="Janeu">
+            <div class="card-content"><h3>Mohit's Janeu</h3><p>A sacred traditional ceremony</p></div>
+        </div>
+        
+        <div class="card" style="border-top: 5px solid var(--gold);">
+            <img src="lucky puja.jpeg" alt="Ramarcha Puja">
+            <div class="card-content"><h3>Lucky's Ramarcha Puja</h3><p>Divine gathering and spiritual bliss</p></div>
+        </div>
+    </div>
+
+    <h2 id="people" class="section-title">The Heart of Gali No. 2 (Residents)</h2>
+    <div class="people-grid">
+        <div class="person-card"><h4>Tanishk Kumar</h4><p>(Lucky)</p></div>
+        <div class="person-card"><h4>Harsh Nayan</h4><p>Resident</p></div>
+        <div class="person-card"><h4>Kunal Nayan</h4><p>(Babul)</p></div>
+        <div class="person-card"><h4>Aryan Bhardwaj</h4><p>(Anshu)</p></div>
+        <div class="person-card"><h4>Gopal Singh</h4><p>Resident</p></div>
+        <div class="person-card"><h4>Piyush Kumar</h4><p>Resident</p></div>
+        <div class="person-card"><h4>Raja Singh</h4><p>Resident</p></div>
+        <div class="person-card"><h4>Kishan Singh</h4><p>Resident</p></div>
+        <div class="person-card"><h4>Sachin Kumar</h4><p>Resident</p></div>
+         <div class="person-card"><h4>Anand thakur</h4><p>(mani)</p></div>
+        
+    </div>
+
+</div>
+
+<div class="address-box" id="contact">
+    <h2>📍 Visit Us</h2>
+    <p style="font-size: 1.2rem;">
+        Anand Vihar Colony, Gali Number 2<br>
+        Landmark: Near Main Mandir<br>
+        Pincode: [Your Area Pincode]<br>
+        State: Bihar/Delhi/UP (Update your location)
+    </p>
+    <div style="margin-top: 20px;">
+        <strong>Community Hours:</strong> 24/7 (Security) | <strong>RWA Meeting:</strong> Every Sunday morning
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Anand Vihar Colony, Gali No. 2. All rights reserved. | Community Spirit First.</p>
+</footer>
+
+</body>
+</html>
